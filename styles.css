@@ -1,0 +1,85 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+}
+
+.stopwatch {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.display {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.controls {
+    margin-bottom: 20px;
+}
+
+.control-btn {
+    font-size: 1rem;
+    padding: 10px 15px;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.control-btn:hover {
+    background-color: #e0e0e0;
+}
+
+#start {
+    background-color: #4caf50;
+    color: white;
+}
+
+#pause {
+    background-color: #f44336;
+    color: white;
+}
+
+#reset {
+    background-color: #2196f3;
+    color: white;
+}
+
+#lap {
+    background-color: #ff9800;
+    color: white;
+}
+
+.laps {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+    max-height: 200px;
+    overflow-y: auto; /* Scroll when list exceeds container height */
+    border-top: 1px solid #ddd;
+    padding-top: 10px;
+}
+
+.laps li {
+    padding: 5px;
+    font-size: 1rem;
+    background-color: #f8f8f8;
+    border: 1px solid #ddd;
+    margin-bottom: 5px;
+    border-radius: 5px;
+}
